@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#define iter=1000
 void aug_mat(float mat[10][10],int n)
 {
     int i,j;
@@ -33,8 +34,6 @@ void display(float mat[10][10],int n)
 void gauss_seidal(float mat[10][10],float x[10],int n)
 {
     int i,j,f=1,k,iter;
-    printf("Enter the No of Iterations: ");
-    scanf("%d",&iter);
     float sum,flag[10];
     double t,error;
     printf("Enter the Tolerance level: ");
